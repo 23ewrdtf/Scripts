@@ -1,3 +1,6 @@
+# Check if Reboot is required
+# First way
+
 $systemInfo = New-Object -ComObject "Microsoft.Update.SystemInfo"
 
 if ( $systemInfo.RebootRequired ) {
@@ -9,3 +12,20 @@ if ( $systemInfo.RebootRequired ) {
 }
 
 $systemInfo
+
+
+# Another Way
+
+(New-Object -ComObject "Microsoft.Update.SystemInfo")
+
+
+# Another way
+
+Function Test-WUARebootRequired {
+    try {
+        (New-Object -ComObject "Microsoft.Update.SystemInfo").RebootRequired
+    } catch {
+        Write-Warning -Message "Failed to query COM object because $($_.Exception.Message)"
+    }
+}
+Test-WUARebootRequired
