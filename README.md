@@ -64,5 +64,7 @@ Check if Reboot is required. A few ways.
 
 Get path for all windows services
 
+### generate_changelog.sh and generate_changelog2.sh
 
+Generates changelog from commits
 
