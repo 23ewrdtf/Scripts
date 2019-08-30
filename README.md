@@ -21,6 +21,10 @@ It displays: node name, %CPU, %RAM, Taints, Created Date/Time, Kubelet Version, 
 
 Average %CPU, %RAM, No of NOT running pods.
 
+### Version_k8_nodes.sh
+
+Shows version of installed kubernetes software.
+
 ### automox_get_servers.ps1
 
 Download info about servers from Automox and save to csv
