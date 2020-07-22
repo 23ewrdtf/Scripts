@@ -3,6 +3,16 @@ Good or Bad scripts, they help me to achieve some bits.
 
 Originally from: https://github.com/tretos53/notes/tree/master/Scripting
 
+### aws_instance_uptime_2_slack.sh
+
+This script takes public IP adress from AWS instances based on specific tags.
+
+Connects using SNMP to each instance and if uptime is more than 24h it sends a slack alert.
+
+
+### aws_console_login_2_slack.sh
+
+This script checks cloud trail in each region and if finds ConsoleLogin it sends an alert to slack
 
 ### bitbucket_backup.py
 
